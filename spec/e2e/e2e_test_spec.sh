@@ -18,7 +18,7 @@ Describe '🙋‍ test the user running the checkMyPullRequests'
   End
 
   It '✓ should complete successfully the parse of all the repositories'
-    When run script bin/checkMyPullRequests
+    When run ./checkMyPullRequests
     The status should be success
     The output should include 'Username'
     The output should include 'GITHUB_TOKEN'
