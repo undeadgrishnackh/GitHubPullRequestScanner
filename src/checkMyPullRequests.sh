@@ -9,7 +9,7 @@ else
   echo "🪙  GITHUB_TOKEN ✅"
 fi
 
-echo "⚙️  Report scanning..."
+echo "⚙️  Repos scanning..."
 curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/users/$GH_USERNAME/repos > /tmp/.GitHubReposJson
 sleep 1s
 jq -r '.[].full_name' /tmp/.GitHubReposJson > /tmp/.GitHubRep
