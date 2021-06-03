@@ -1,3 +1,15 @@
 #!/usr/bin/env bash
+SCRIPT="$(readlink "$0")"
+SCRIPTPATH="$(dirname "$SCRIPT")"
+source ${SCRIPTPATH}/../src/checkMyPullRequests.sh
 
-sh ./src/checkMyPullRequests.sh
+GH_USERNAME="undeadgrishnackh"
+
+if_GH_USERNAME_IsNotPresent && exit 1
+if_GITHUB_TOKEN_IsNotPresent && exit 1
+if_Curl_IsNotInstalled && exit 1
+if_Jq_IsNotInstalled && exit 1
+if_GitHubClientl_IsNotInstalled && exit 1
+
+scanTheRepositories
+searchForPendingPullRequests

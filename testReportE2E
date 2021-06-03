@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 echo "🧪 ShellSpec Tests report"
 echo "🔬 UNIT TESTS"
-# shellspec --format d ./spec/unit/unit_test_spec.sh
+shellspec --format d ./spec/unit/unit_test_spec.sh
 
 echo "🚚 E2E TESTS"
 shellspec --format d ./spec/e2e/e2e_test_spec.sh
+

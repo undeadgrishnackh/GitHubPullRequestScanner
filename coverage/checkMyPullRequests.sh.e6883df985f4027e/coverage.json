@@ -1,12 +1,12 @@
 {
   "files": [
-    {"file": "/Users/michele.brissoni@ibm.com/ProgettiGit/UndeadGrishnackh/GitHubPullRequestScanner/src/checkMyPullRequests.sh", "percent_covered": "78.95", "covered_lines": "15", "total_lines": "19"}
+    {"file": "/Users/michele.brissoni@ibm.com/ProgettiGit/UndeadGrishnackh/GitHubPullRequestScanner/src/checkMyPullRequests.sh", "percent_covered": "0.00", "covered_lines": "0", "total_lines": "33"}
   ],
-  "percent_covered": "78.95",
-  "covered_lines": 15,
-  "total_lines": 19,
+  "percent_covered": "0.00",
+  "covered_lines": 0,
+  "total_lines": 33,
   "percent_low": 25,
   "percent_high": 75,
   "command": "checkMyPullRequests.sh",
-  "date": "2021-06-02 12:43:37"
+  "date": "2021-06-03 11:50:50"
 }
