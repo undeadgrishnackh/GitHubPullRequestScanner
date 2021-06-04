@@ -34,5 +34,6 @@ $ docker run -it --rm -u $(id -u):$(id -g) -v "$PWD:/src" shellspec/shellspec:kc
 
 ## 📥 TODO:
 
-- 📌 try shellspec.info to create the test scaffolding
-- 📌 improve the exec command return code with a proper try/catch
+- 📌 Create the GitHub CI pipeline.
+- 📌 create the README badges banner
+- 📌 add the ShellSpec test reports (unit + E2E)
