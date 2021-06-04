@@ -23,5 +23,6 @@ Describe '🙋‍ test the user running the checkMyPullRequests'
     The output should include 'Username'
     The output should include 'GITHUB_TOKEN'
     The output should include 'Repos scanning'
+    The output should include '😍 Mission completed 🤟'
   End
 End
