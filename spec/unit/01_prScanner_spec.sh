@@ -40,10 +40,9 @@ Describe '⚙️⚙️ Test PR scanner'
       cp -v spec/unit/mocks/.GitHubRepositories /tmp; 
       sleep 1;
     }
-    parseJsonRepositoryToFindPR () { echo 'https://api.github.com/repos/undeadgrishnackh/CarParkEscape2021/pulls/1' | grep '/pulls/'; return 0; }
+    parseJsonRepositoryToFindPR () { echo '' | grep '/pulls/'; }
     openThePullRequestInTheBrowser () { echo "☑️  No pulls request for the undeadgrishnackh/CarParkEscape2021"; }
     #!! [MOCKs - End]
-
     It '✓ should find no pull request from a sleepy repository 🥱'
       When call searchForPendingPullRequests
       The status should be success
@@ -62,10 +61,9 @@ Describe '⚙️⚙️ Test PR scanner'
       cp spec/unit/mocks/.GitHubRepositories /tmp; 
       sleep 1;
     }
-    parseJsonRepositoryToFindPR () { echo '' | grep '/pulls/'; }
+    parseJsonRepositoryToFindPR () { echo 'https://api.github.com/repos/undeadgrishnackh/CarParkEscape2021/pulls/1' | grep '/pulls/'; }
     openThePullRequestInTheBrowser () { echo "Opening github.com/undeadgrishnackh/CarParkEscape2021/pulls in your browser."; }
     #!! [MOCKs - End]
-
     It '✓ should find a new pull request from an active repository 🏋️‍'
       When call searchForPendingPullRequests
       The status should be success
