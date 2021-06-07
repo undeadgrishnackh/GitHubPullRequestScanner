@@ -40,7 +40,7 @@ Describe '⚙️⚙️ Test PR scanner'
       cp -v spec/unit/mocks/.GitHubRepositories /tmp; 
       sleep 1;
     }
-    parseJsonRepositoryToFindPR () { echo 'https://api.github.com/repos/undeadgrishnackh/CarParkEscape2021/pulls/1' | grep '/pulls/'; }
+    parseJsonRepositoryToFindPR () { echo 'https://api.github.com/repos/undeadgrishnackh/CarParkEscape2021/pulls/1' | grep '/pulls/'; return 0; }
     openThePullRequestInTheBrowser () { echo "☑️  No pulls request for the undeadgrishnackh/CarParkEscape2021"; }
     #!! [MOCKs - End]
 
