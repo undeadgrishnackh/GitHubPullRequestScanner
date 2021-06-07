@@ -1,14 +1,12 @@
 os: osx
 addons:
   homebrew:
-    taps: homebrew/cask-versions
     packages:
     - git
     - curl
     - jq
-    - shellspec
-# before_script:
-#   - curl -fsSL https://git.io/shellspec | sh -s -- --yes
+before_script:
+  - curl -fsSL https://git.io/shellspec | sh -s -- --yes
 language: bash
 script:
   - shellspec --format d spec/unit/*.sh
