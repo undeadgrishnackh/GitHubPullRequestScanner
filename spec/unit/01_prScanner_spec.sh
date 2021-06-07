@@ -40,6 +40,7 @@ Describe '⚙️⚙️ Test PR scanner'
       cp -v spec/unit/mocks/.GitHubRepositories /tmp; 
       sleep 1;
     }
+    parseJsonRepositoryToFindPR () { echo 'https://api.github.com/repos/undeadgrishnackh/CarParkEscape2021/pulls/1' | grep '/pulls/'; }
     #!! [MOCKs - End]
 
     It '✓ should find no pull request from a sleepy repository 🥱'
@@ -60,6 +61,7 @@ Describe '⚙️⚙️ Test PR scanner'
       cp spec/unit/mocks/.GitHubRepositories /tmp; 
       sleep 1;
     }
+    parseJsonRepositoryToFindPR () { echo '' | grep '/pulls/'; }
     openThePullRequestInTheBrowser () { echo "Opening github.com/undeadgrishnackh/CarParkEscape2021/pulls in your browser."; }
     #!! [MOCKs - End]
 
