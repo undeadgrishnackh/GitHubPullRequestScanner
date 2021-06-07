@@ -5,6 +5,7 @@ addons:
     - git
     - curl
     - jq
+    update: true
 before_script:
   - curl -fsSL https://git.io/shellspec | sh -s -- --yes
 language: bash
