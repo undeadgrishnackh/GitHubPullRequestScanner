@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 echo "🧪 ShellSpec - KCOV Tests coverage report"
 echo "🙈 Coverage"
+cd ..
 KCOV_PATH="${HOME}/.local/bin"
 REPORT_PATH=${PWD}/coverage
 ${KCOV_PATH}/kcov ${REPORT_PATH} --include-path=src,bin checkMyPullRequests
 open ${REPORT_PATH}/index.html
+cd -

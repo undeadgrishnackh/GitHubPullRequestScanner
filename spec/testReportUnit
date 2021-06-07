@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 echo "🧪 ShellSpec Tests report"
 echo "🔬 UNIT TESTS"
-shellspec --format d ./spec/unit/*.sh
+shellspec --format d ./unit/*.sh

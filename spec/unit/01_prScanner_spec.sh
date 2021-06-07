@@ -56,7 +56,7 @@ Describe '⚙️⚙️ Test PR scanner'
     openThePullRequestInTheBrowser () { echo "Opening github.com/undeadgrishnackh/CarParkEscape2021/pulls in your browser."; }
     #!! [MOCKs - End]
 
-    It '✓ should find a new pull request from an active repository 🏋️‍♂️'
+    It '✓ should find a new pull request from an active repository 🏋️‍'
       When call searchForPendingPullRequests
       The status should be success
       The file GitHubRepositories should be exist

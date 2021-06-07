@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+echo "🧪 ShellSpec Tests report"
+
+echo "🚚 E2E TESTS"
+shellspec --format d ./e2e/e2e_test_spec.sh
+

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 if_GH_USERNAME_IsNotPresent () {
   if [[ ${GH_USERNAME} == "" ]]; then
