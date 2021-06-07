@@ -12,7 +12,7 @@ Describe '⚙️⚙️ Test PR scanner'
       echo "travis CI de-🐛 🤣 --- END"
     }
     parseJsonToFindAllTheRepositoriesFullName () {
-      cp -v spec/unit/mocks/.GitHubRepositories /tmp; }
+      cp -v spec/unit/mocks/.GitHubRepositories /tmp; 
     }
     #!! [MOCKs - End]
     File GitHubRepositoriesJson='/tmp/.GitHubRepositoriesJson'
