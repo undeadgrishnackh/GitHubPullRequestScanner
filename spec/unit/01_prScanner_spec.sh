@@ -4,8 +4,15 @@ Describe '⚙️⚙️ Test PR scanner'
   Describe '📖 Scanner to collect the different Repositories'
     #!! [MOCKs]
     getRepositoriesListFromGitHubAPI () { 
+      echo "travis CI de-🐛 🤣"
       rm /tmp/.GitHubRepositories* > /dev/null 2>&1; 
-      cp spec/unit/mocks/.GitHubRepositoriesJson /tmp; 
+      pwd
+      ls -laux
+      cp -v spec/unit/mocks/.GitHubRepositoriesJson /tmp; 
+      echo "travis CI de-🐛 🤣 --- END"
+    }
+    parseJsonToFindAllTheRepositoriesFullName () {
+      cp -v spec/unit/mocks/.GitHubRepositories /tmp; }
     }
     #!! [MOCKs - End]
     File GitHubRepositoriesJson='/tmp/.GitHubRepositoriesJson'
@@ -29,8 +36,8 @@ Describe '⚙️⚙️ Test PR scanner'
     #!! [MOCKs]
     getRepositoryPullRequestsFromGitHubAPI () { 
       rm /tmp/.GitHubPRJson* > /dev/null 2>&1; 
-      cp spec/unit/mocks/.GitHubPRJson.NOPR /tmp/.GitHubPRJson; 
-      cp spec/unit/mocks/.GitHubRepositories /tmp; 
+      cp -v spec/unit/mocks/.GitHubPRJson.NOPR /tmp/.GitHubPRJson; 
+      cp -v spec/unit/mocks/.GitHubRepositories /tmp; 
       sleep 1;
     }
     #!! [MOCKs - End]
