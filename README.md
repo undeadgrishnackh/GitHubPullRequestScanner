@@ -1,4 +1,5 @@
 # GitHubPullRequestScanner
+[![Build Status](https://www.travis-ci.com/undeadgrishnackh/GitHubPullRequestScanner.svg?branch=main)](https://www.travis-ci.com/undeadgrishnackh/GitHubPullRequestScanner)
 
 GitHubPullRequestScanner is a simple GitHub pulls request scanner to check my repositories and open the pull request web page if something is waiting for me to be merged 🕵🏻. Having only the GitHub slack integration wasn't enough anymore, so I decided to automate it by leveraging the GitHub API and the *GH client*.
 
@@ -19,8 +20,3 @@ I decided to use [ShellSpec](https://shellspec.info/) as the testing library. In
 ### ShellSpec & kcov
 
 After playing with ShellSpec and kcov (local installation VS Docker) I opted for a development cycle with local installation. The e2e part with docker needs to build a new container with curl, jq, gh, and I wanted to have clean bash scripts instead of old looking sh scripts. Because I was focus to test ShellSpec, for the moment I decided to go with an 'easy CI setup' using travis on OSX and brew. I have to say that installing shellspec and kcov locally was kinda tricky, especially for the kcov part. It requires gmake, and on MacOS, is necessary to tune the installationscript with what reported in the official documentation due to an OpenSLL compiling error. For more details, I submitted the [ISSUE#357](https://github.com/SimonKagstrom/kcov/issues/357)) to explain what is necessary to do. So I'll upload the coverage from local and on Trvis I'll run a unit test run only for the build pass.
-
-## 📥 TODO:
-
-- 📌 🚧 [WIP]Create the GitHub CI pipeline on travis.
-- 📌 create the README badges banner
