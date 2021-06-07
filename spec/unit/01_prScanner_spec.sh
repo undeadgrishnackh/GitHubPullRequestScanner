@@ -41,6 +41,7 @@ Describe '⚙️⚙️ Test PR scanner'
       sleep 1;
     }
     parseJsonRepositoryToFindPR () { echo 'https://api.github.com/repos/undeadgrishnackh/CarParkEscape2021/pulls/1' | grep '/pulls/'; }
+    openThePullRequestInTheBrowser () { echo "☑️  No pulls request for the undeadgrishnackh/CarParkEscape2021"; }
     #!! [MOCKs - End]
 
     It '✓ should find no pull request from a sleepy repository 🥱'
